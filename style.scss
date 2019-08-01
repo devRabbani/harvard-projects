@@ -1,0 +1,128 @@
+$color:#b6bfbf;
+%sameheader{
+  text-align: center;
+  text-transform: uppercase;
+}
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  padding: 1%;
+}
+
+h1{
+@extend %sameheader;
+  margin:5% 0;
+}
+
+table{
+width: 100%;  
+}
+
+th, td {
+  padding: 1%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.type{
+  width:50%;
+}
+.about img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: block;
+}
+.about-para{
+  display: block;
+  margin-top: 5%;
+}
+
+.hero-text{
+  @extend %sameheader;
+  margin-top: 10%;
+  margin-bottom: 1%;
+}
+
+.sub-text{
+text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  margin-bottom: 2%;
+}
+.cbut{
+  color: white;
+  display: block;
+  width: 20%;
+  margin: auto;
+}
+
+.cbut:hover{
+  transform: scale(1.1);
+}
+
+table{
+  background-color:$color;
+}
+.contact{
+  background-color: beige;
+  padding: 1%;
+  height: 85vh;
+  h1{
+    @extend %sameheader;
+    font-size: 200%;
+    margin-top: 7%;
+  }
+  li{
+    list-style: none;
+  }
+}
+/* 
+nav bar
+*/
+.navc li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 12%;
+}
+a{
+  text-decoration: none;
+}
+.navc{
+  float: right;
+  width: 70%;
+}
+
+#profile-name{
+float: left;
+}
+
+ul.navc > li a{
+  color: black;
+}
+
+@media (max-width:960px){
+  body{
+    font-size:90%;
+  }
+  .about-para{
+   margin-left: 5%;
+  }
+  .about img{
+  width: 200px;
+  height: 200px;
+}
+  .sub-text{
+    font-size: 110%;
+  }
+  .navc li{
+  margin-left: 7%;
+}
+}
+
