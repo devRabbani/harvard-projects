@@ -1,0 +1,102 @@
+body{
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+li.channel-list-item {
+  color: #ff5722 !important;
+  cursor: pointer !important;
+}
+
+div.chatWindow{
+  height: 20em;
+  background-color: white;
+  border: 2px solid grey;
+  width: 50%;
+}
+
+div.chatMessages{
+
+  height: 15em;
+  background-color: #dfdfdf;
+
+}
+div.chatTyping{
+  height: 5em;
+}
+
+div.chatMessages{
+  overflow: scroll;
+}
+
+@-webkit-keyframes hide {
+    0% {
+        opacity: 1;
+        height: 100%;
+        line-height: 100%;
+
+        margin-bottom: 5px;
+    }
+    75% {
+        opacity: 0;
+        height: 100%;
+        line-height: 100%;
+
+        margin-bottom: 5px;
+    }
+    100% {
+        opacity: 0;
+        height: 0px;
+        line-height: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+        height: 100%;
+        line-height: 100%;
+
+        margin-bottom: 5px;
+    }
+    75% {
+        opacity: 0;
+        height: 100%;
+        line-height: 100%;
+
+        margin-bottom: 5px;
+    }
+    100% {
+        opacity: 0;
+        height: 0px;
+        line-height: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.hiddingMessage{
+  margin-bottom: 5px;
+  -webkit-animation-name: hide;
+  animation-name: hide;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.message {
+  font-size: 0.9rem;
+}
+
+.delete {
+  cursor: pointer;
+}
