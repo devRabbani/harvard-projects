@@ -101,5 +101,7 @@ def conect(data):
     # Else, emit a notFound message
     emit("updateChat", 'notFound', broadcast=True)
 
-if __name__ == '__main__':
-    socketio.run(app)
+# if __name__ == '__main__':
+#     socketio.run(app)
+if __name__ == "__main__":
+    socketio.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
